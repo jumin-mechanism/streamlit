@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import random
 
 
 view = [100, 150, 30]
@@ -10,6 +11,16 @@ view
 st.write("## test3")
 st.bar_chart(view)
 
-sview = pd.Series(view)
-sview
+i = 0
+view_1 = []
 
+while True:
+  
+  if i > 10:
+    break
+  
+  view_1.append(random.randint(0,10))
+  sview = pd.Series(view_1)
+  sview
+
+  i++

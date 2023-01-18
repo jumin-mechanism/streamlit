@@ -23,4 +23,4 @@ while True:
   sview = pd.Series(view_1)
   sview
 
-  i++
+  i += 1

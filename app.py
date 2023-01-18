@@ -21,6 +21,7 @@ while True:
   
   view_1.append(random.randint(0,10))
   sview = pd.Series(view_1)
-  sview
+  
+  st.bar_chart(view_1)
 
   i += 1
